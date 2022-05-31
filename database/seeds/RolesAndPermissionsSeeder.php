@@ -28,7 +28,9 @@ class RolesAndPermissionsSeeder extends Seeder
                     'student_id' => null,
                     'name' => 'Admin',
                     'email' => 'admin@spesix-lms.com',
-                    'password' => '12345678'
+                    'email_verified_at' => now(),
+                    'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+                    'remember_token' => Str::random(10),
                 ],
                 [
                     'grade_id' => null,
@@ -36,7 +38,9 @@ class RolesAndPermissionsSeeder extends Seeder
                     'student_id' => null,
                     'name' => 'Supervisor',
                     'email' => 'supervisor@spesix-lms.com',
-                    'password' => '12345678'
+                    'email_verified_at' => now(),
+                    'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+                    'remember_token' => Str::random(10),
                 ],
                 [
                     'grade_id' => null,
@@ -44,7 +48,9 @@ class RolesAndPermissionsSeeder extends Seeder
                     'student_id' => null,
                     'name' => 'Pengajar',
                     'email' => 'teacher@spesix-lms.com',
-                    'password' => '12345678'
+                    'email_verified_at' => now(),
+                    'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+                    'remember_token' => Str::random(10),
                 ],
                 [
                     'grade_id' => 25,
@@ -52,7 +58,9 @@ class RolesAndPermissionsSeeder extends Seeder
                     'student_id' => null,
                     'name' => 'Siswa',
                     'email' => 'student@spesix-lms.com',
-                    'password' => '12345678'
+                    'email_verified_at' => now(),
+                    'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+                    'remember_token' => Str::random(10),
                 ],
                 [
                     'grade_id' => null,
@@ -60,7 +68,9 @@ class RolesAndPermissionsSeeder extends Seeder
                     'student_id' => 4,
                     'name' => 'Wali Siswa',
                     'email' => 'parent@spesix-lms.com',
-                    'password' => '12345678'
+                    'email_verified_at' => now(),
+                    'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+                    'remember_token' => Str::random(10),
                 ]
             ]
         );
