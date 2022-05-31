@@ -30,7 +30,7 @@
     <!-- Modernize js -->
     <script src="{{asset('js/modernizr-3.6.0.min.js')}}"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
     
     @laravelPWA
     
