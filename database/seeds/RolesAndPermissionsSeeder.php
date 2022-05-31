@@ -23,19 +23,25 @@ class RolesAndPermissionsSeeder extends Seeder
         DB::table('users')->insert(
             [
                 [
+                    'grade_id' => null,
                     'member_id' => 1,
+                    'student_id' => null,
                     'name' => 'Admin',
                     'email' => 'admin@spesix-lms.com',
                     'password' => '12345678'
                 ],
                 [
+                    'grade_id' => null,
                     'member_id' => 2,
+                    'student_id' => null,
                     'name' => 'Supervisor',
                     'email' => 'supervisor@spesix-lms.com',
                     'password' => '12345678'
                 ],
                 [
+                    'grade_id' => null,
                     'member_id' => 3,
+                    'student_id' => null,
                     'name' => 'Pengajar',
                     'email' => 'teacher@spesix-lms.com',
                     'password' => '12345678'
@@ -43,11 +49,14 @@ class RolesAndPermissionsSeeder extends Seeder
                 [
                     'grade_id' => 25,
                     'member_id' => 4,
+                    'student_id' => null,
                     'name' => 'Siswa',
                     'email' => 'student@spesix-lms.com',
                     'password' => '12345678'
                 ],
                 [
+                    'grade_id' => null,
+                    'member_id' => null,
                     'student_id' => 4,
                     'name' => 'Wali Siswa',
                     'email' => 'parent@spesix-lms.com',
