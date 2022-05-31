@@ -20,7 +20,7 @@ class RolesAndPermissionsSeeder extends Seeder
         Role::create(['name'=>'Admin']);
         Role::create(['name'=>'Wali Siswa']);
 
-        DB::table('model_has_roles')->insert(
+        DB::table('users')->insert(
             [
                 [
                     'member_id' => 1,
