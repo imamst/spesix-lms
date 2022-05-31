@@ -20,46 +20,34 @@ class RolesAndPermissionsSeeder extends Seeder
         Role::create(['name'=>'Admin']);
         Role::create(['name'=>'Wali Siswa']);
 
-        $admin_tu = factory(\App\User::class)->create([
-            'member_id' => 1,
-            'name' => 'Admin',
-            'email' => 'admin@spesix-lms.com',
-            'password' => '12345678'
-        ]);
-        $admin_tu->assignRole('Admin');
-
-        $supervisor = factory(\App\User::class)->create([
-            'member_id' => 2,
-            'name' => 'Supervisor',
-            'email' => 'supervisor@spesix-lms.com',
-            'password' => '12345678'
-        ]);
-        $supervisor->assignRole('Supervisor');
-
-        $teacher = factory(\App\User::class)->create([
-            'member_id' => 3,
-            'name' => 'Pengajar',
-            'email' => 'teacher@spesix-lms.com',
-            'password' => '12345678'
-        ]);
-        $teacher->assignRole('Pengajar');
-
-        $student = factory(\App\User::class)->create([
-            'grade_id' => 25,
-            'member_id' => 4,
-            'name' => 'Siswa',
-            'email' => 'student@spesix-lms.com',
-            'password' => '12345678'
-        ]);
-        $student->assignRole('Siswa');
-
-        $parent = factory(\App\User::class)->create([
-            'student_id' => 4,
-            'name' => 'Wali Siswa',
-            'email' => 'parent@spesix-lms.com',
-            'password' => '12345678'
-        ]);
-        $parent->assignRole('Wali Siswa');
-
+        DB::table('model_has_roles')->insert(
+            [
+                [
+                    'role_id' => '4',
+                    'model_type' => 'App\User',
+                    'model_id' => '1'
+                ],
+                [
+                    'role_id' => '3',
+                    'model_type' => 'App\User',
+                    'model_id' => '2'
+                ],
+                [
+                    'role_id' => '2',
+                    'model_type' => 'App\User',
+                    'model_id' => '3'
+                ],
+                [
+                    'role_id' => '1',
+                    'model_type' => 'App\User',
+                    'model_id' => '5'
+                ],
+                [
+                    'role_id' => '5',
+                    'model_type' => 'App\User',
+                    'model_id' => '5'
+                ]
+            ]
+        );
     }
 }
